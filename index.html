@@ -1,0 +1,1070 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kerri Lashua — Confectionery & Cake Decorating Portfolio</title>
+  <meta name="description" content="Professional cake and cookie decorating portfolio of Kerri Lashua showcasing artisanal cakes, hand-painted fine art cookies, large-scale event commissions, and sculpted illusion cakes.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --pink-brand: #f2a6c1;
+      --pink-deep: #e888ac;
+      --pink-muted: #c98da2;
+      --pink-whisper: rgba(242, 166, 193, 0.08);
+      --ink: #16151a;
+      --ink-raised: #201f26;
+      --ink-card: #262530;
+      --ink-card-hover: #2d2c38;
+      --hairline: rgba(255, 255, 255, 0.08);
+      --hairline-strong: rgba(255, 255, 255, 0.14);
+      --pink-hairline: rgba(242, 166, 193, 0.28);
+      --text-main: #f5f3f2;
+      --text-muted: #a7a3a1;
+      --text-faint: #6f6b6a;
+      --white: #ffffff;
+      --radius-sm: 6px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --shadow-subtle: 0 12px 40px rgba(0, 0, 0, 0.45);
+      --shadow-hover: 0 20px 60px rgba(0, 0, 0, 0.6);
+      --shadow-pink: 0 10px 34px rgba(242, 166, 193, 0.18);
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans: 'Montserrat', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--font-sans);
+      background-color: var(--ink);
+      color: var(--text-main);
+      line-height: 1.7;
+      overflow-x: hidden;
+    }
+
+    ::selection {
+      background: rgba(242, 166, 193, 0.25);
+      color: #fff;
+    }
+
+    .stripe-ribbon {
+      height: 2px;
+      background: linear-gradient(90deg, transparent, var(--pink-brand) 20%, var(--pink-brand) 80%, transparent);
+      opacity: 0.7;
+    }
+
+    header {
+      background: rgba(10, 10, 11, 0.9);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--hairline);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 28px;
+    }
+    .brand-logo-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      text-decoration: none;
+    }
+    .brand-logo-img {
+      height: 44px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 4px;
+      filter: grayscale(1) brightness(1.5) contrast(1.1);
+      opacity: 0.95;
+    }
+    .brand-title {
+      font-family: var(--font-serif);
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.5px;
+      line-height: 1;
+    }
+    .brand-subtitle {
+      font-size: 0.66rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--pink-brand);
+      font-weight: 600;
+      display: block;
+      margin-top: 6px;
+    }
+    .nav-menu {
+      display: flex;
+      gap: 28px;
+      list-style: none;
+      align-items: center;
+    }
+    .nav-menu a {
+      text-decoration: none;
+      color: var(--text-muted);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: color 0.25s ease;
+    }
+    .nav-menu a:hover {
+      color: var(--pink-brand);
+    }
+    .btn-gold {
+      background: transparent;
+      color: var(--white) !important;
+      padding: 10px 22px;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.72rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+      border: 1px solid var(--pink-brand);
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      background: var(--pink-brand);
+      color: var(--ink) !important;
+    }
+
+    /* Hero */
+    .hero {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 28px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+    }
+    .hero-content h1 {
+      font-family: var(--font-serif);
+      font-size: 3.4rem;
+      font-weight: 500;
+      line-height: 1.15;
+      color: var(--white);
+      margin-bottom: 22px;
+      letter-spacing: -0.5px;
+    }
+    .hero-content h1 em {
+      font-style: italic;
+      color: var(--pink-brand);
+    }
+    .hero-content p {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 34px;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    .tag-pill {
+      display: inline-block;
+      padding: 6px 16px;
+      border: 1px solid var(--pink-hairline);
+      color: var(--pink-brand);
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 16px;
+      align-items: center;
+    }
+    .btn-pink {
+      background: var(--pink-brand);
+      color: var(--ink);
+      padding: 14px 30px;
+      border-radius: 2px;
+      font-weight: 600;
+      font-size: 0.76rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: var(--shadow-pink);
+      transition: all 0.3s ease;
+    }
+    .btn-pink:hover {
+      background: var(--pink-deep);
+      transform: translateY(-2px);
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--text-main);
+      padding: 14px 28px;
+      border-radius: 2px;
+      font-weight: 500;
+      font-size: 0.76rem;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      text-decoration: none;
+      display: inline-block;
+      border: 1px solid var(--hairline-strong);
+      transition: all 0.3s ease;
+    }
+    .btn-outline:hover {
+      background: var(--ink-card);
+      border-color: var(--pink-brand);
+      color: var(--pink-brand);
+    }
+    .hero-frame {
+      background: var(--ink-card);
+      padding: 14px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-subtle);
+      border: 1px solid var(--hairline);
+      position: relative;
+    }
+    .hero-img-box {
+      width: 100%;
+      height: 460px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      position: relative;
+    }
+    .hero-img-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: brightness(1.08) contrast(1.05);
+    }
+    .hero-badge-artisan {
+      position: absolute;
+      bottom: -16px;
+      right: 22px;
+      background: var(--ink);
+      padding: 12px 22px;
+      border-radius: 40px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+      border: 1px solid var(--pink-hairline);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      font-size: 0.75rem;
+      color: var(--pink-brand);
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    /* About Decorator Section */
+    .about-decorator-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 28px;
+    }
+    .about-decorator-card {
+      background: var(--ink-card);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--hairline);
+      box-shadow: var(--shadow-subtle);
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 48px;
+      padding: 44px;
+      align-items: center;
+    }
+    .decorator-portrait-box {
+      width: 100%;
+      height: 440px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--pink-hairline);
+      box-shadow: 0 14px 34px rgba(0,0,0,0.5);
+      position: relative;
+    }
+    .decorator-portrait-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+    .about-decorator-text h2 {
+      font-family: var(--font-serif);
+      font-size: 2.6rem;
+      color: var(--white);
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+    .about-decorator-text .role-subtitle {
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      color: var(--pink-brand);
+      font-weight: 600;
+      margin-bottom: 22px;
+      display: block;
+    }
+    .about-decorator-text p {
+      color: var(--text-muted);
+      font-size: 0.96rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      font-weight: 300;
+    }
+    .decorator-credentials-strip {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+      padding-top: 20px;
+      border-top: 1px solid var(--hairline);
+    }
+    .cred-item {
+      display: flex;
+      flex-direction: column;
+    }
+    .cred-number {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      color: var(--pink-brand);
+      font-weight: 600;
+      line-height: 1;
+    }
+    .cred-label {
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-top: 4px;
+    }
+
+    /* Client Showcase Ribbon */
+    .brand-commissions-section {
+      max-width: 1200px;
+      margin: 70px auto 20px auto;
+      padding: 0 28px;
+      text-align: center;
+    }
+    .commission-title {
+      font-size: 0.76rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: var(--pink-muted);
+      margin-bottom: 24px;
+      font-weight: 600;
+    }
+    .commission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .commission-card {
+      background: var(--ink-card);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-sm);
+      padding: 20px 16px;
+      transition: border-color 0.3s ease;
+    }
+    .commission-card:hover {
+      border-color: var(--pink-hairline);
+    }
+    .commission-card h4 {
+      font-family: var(--font-serif);
+      font-size: 1.25rem;
+      color: var(--white);
+      margin-bottom: 6px;
+      font-weight: 600;
+    }
+    .commission-card p {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+      font-weight: 300;
+    }
+
+    /* Process Feature Spotlight */
+    .technique-spotlight-section {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 28px;
+    }
+    .technique-spotlight-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+    }
+    .technique-card {
+      background: var(--ink-card);
+      border-radius: var(--radius-lg);
+      padding: 34px;
+      border: 1px solid var(--hairline);
+      box-shadow: var(--shadow-subtle);
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.3s ease;
+    }
+    .technique-card:hover {
+      border-color: var(--pink-hairline);
+    }
+    .technique-card h3 {
+      font-family: var(--font-serif);
+      font-size: 1.85rem;
+      color: var(--white);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .technique-card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+      margin-bottom: 22px;
+      font-weight: 300;
+      flex-grow: 1;
+    }
+    .technique-img-frame {
+      width: 100%;
+      height: 280px;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--hairline);
+    }
+    .technique-img-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Craftsmanship Showcase */
+    .packaging-spotlight {
+      background: var(--ink-raised);
+      border-top: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      padding: 70px 28px;
+      margin: 70px 0;
+    }
+    .packaging-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: var(--ink-card);
+      border-radius: var(--radius-lg);
+      padding: 44px 50px;
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 50px;
+      align-items: center;
+      border: 1px solid var(--hairline);
+      box-shadow: var(--shadow-subtle);
+    }
+    .packaging-text h3 {
+      font-family: var(--font-serif);
+      font-size: 2.2rem;
+      color: var(--white);
+      margin-bottom: 18px;
+      font-weight: 500;
+    }
+    .packaging-text p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+      margin-bottom: 24px;
+      font-weight: 300;
+    }
+    .packaging-perks {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+    .packaging-perks li {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: baseline;
+      gap: 12px;
+      font-weight: 300;
+    }
+    .packaging-perks li strong {
+      color: var(--text-main);
+      font-weight: 500;
+    }
+    .packaging-img-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+    .packaging-img-grid img {
+      width: 100%;
+      height: 140px;
+      object-fit: cover;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--hairline);
+    }
+
+    /* Gallery */
+    #gallery {
+      max-width: 1200px;
+      margin: 80px auto;
+      padding: 0 28px;
+    }
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-bottom: 44px;
+    }
+    .filter-btn {
+      background: var(--ink-raised);
+      color: var(--text-muted);
+      border: 1px solid var(--hairline-strong);
+      padding: 9px 22px;
+      border-radius: 30px;
+      font-size: 0.74rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 1.6px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--pink-brand);
+      color: var(--ink);
+      border-color: var(--pink-brand);
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+      gap: 30px;
+    }
+    .gallery-item {
+      background: var(--ink-card);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      border: 1px solid var(--hairline);
+      box-shadow: var(--shadow-subtle);
+      transition: all 0.35s ease;
+      display: flex;
+      flex-direction: column;
+    }
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-hover);
+      border-color: var(--pink-hairline);
+      background: var(--ink-card-hover);
+    }
+    .item-media {
+      height: 300px;
+      position: relative;
+      overflow: hidden;
+      background: var(--ink-raised);
+    }
+    .item-media img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease, filter 0.4s ease;
+      filter: saturate(0.95) brightness(1.02);
+    }
+    .gallery-item:hover .item-media img {
+      transform: scale(1.06);
+      filter: saturate(1.05) brightness(1.06);
+    }
+    .item-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(10, 10, 11, 0.75);
+      backdrop-filter: blur(8px);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.68rem;
+      font-weight: 700;
+      color: var(--pink-brand);
+      text-transform: uppercase;
+      letter-spacing: 1.3px;
+      border: 1px solid rgba(242, 166, 193, 0.3);
+    }
+    .item-info {
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .item-info h3 {
+      font-family: var(--font-serif);
+      font-size: 1.45rem;
+      color: var(--white);
+      margin-bottom: 10px;
+      font-weight: 500;
+    }
+    .item-info p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      flex-grow: 1;
+      font-weight: 300;
+      line-height: 1.65;
+    }
+    .item-meta-craft {
+      border-top: 1px solid var(--hairline);
+      padding-top: 14px;
+      font-size: 0.74rem;
+      color: var(--pink-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    /* Skills / Technique Matrix */
+    .skills-section {
+      background: var(--ink-raised);
+      border-top: 1px solid var(--hairline);
+      border-bottom: 1px solid var(--hairline);
+      padding: 70px 28px;
+    }
+    .skills-container {
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+    .skill-box {
+      background: var(--ink-card);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-md);
+      padding: 26px;
+    }
+    .skill-box h4 {
+      font-family: var(--font-serif);
+      font-size: 1.35rem;
+      color: var(--pink-brand);
+      margin-bottom: 10px;
+    }
+    .skill-box p {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      font-weight: 300;
+    }
+
+    /* Footer */
+    footer {
+      background: #000000;
+      color: var(--text-main);
+      padding: 60px 28px 30px 28px;
+      margin-top: 80px;
+      border-top: 1px solid var(--hairline);
+    }
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 54px;
+      padding-bottom: 34px;
+      border-bottom: 1px solid var(--hairline);
+    }
+    .footer-col h4 {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      margin-bottom: 14px;
+      color: var(--pink-brand);
+      font-weight: 500;
+    }
+    .footer-col p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+      font-weight: 300;
+    }
+    .footer-col a {
+      color: var(--pink-brand);
+      text-decoration: none;
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 24px;
+      font-size: 0.76rem;
+      letter-spacing: 0.8px;
+      color: var(--text-faint);
+    }
+
+    @media (max-width: 860px) {
+      .hero { grid-template-columns: 1fr; margin-top: 20px; }
+      .video-dual-grid { grid-template-columns: 1fr; }
+      .packaging-inner { grid-template-columns: 1fr; padding: 30px; }
+      .footer-container { grid-template-columns: 1fr; gap: 30px; }
+      .nav-menu { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hairline Accent Ribbon -->
+  <div class="stripe-ribbon"></div>
+
+  <!-- Main Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="brand-logo-wrapper">
+        <img src="assets/images/confectionerriland_logo.jpg" alt="ConfectionerriLand Logo" class="brand-logo-img">
+        <div>
+          <div class="brand-title">Kerri Lashua</div>
+          <span class="brand-subtitle">Confectionery &amp; Cake Artistry Portfolio</span>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#commissions">Commissions</a></li>
+        <li><a href="#gallery">Portfolio Gallery</a></li>
+        <li><a href="#standards">Standards</a></li>
+        <li><a href="https://instagram.com/confectionerriland" target="_blank" class="btn-gold">Instagram @confectionerriland</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <div class="hero" id="about">
+    <div class="hero-content">
+      <span class="tag-pill">Professional Decorator &amp; Sugar Artisan</span>
+      <h1>Artisanal confectionery crafted with <em>precision &amp; elegance</em>.</h1>
+      <p>Over 18 years of specialty baking and cake decorating mastery—from multi-tiered celebration cakes and hand-painted fine art illustration cookies, to hyper-realistic sculpted illusion showpieces and high-volume corporate commissions.</p>
+      <div class="hero-actions">
+        <a href="#gallery" class="btn-pink">View Portfolio Gallery</a>
+        <a href="#standards" class="btn-outline">Quality &amp; Standards</a>
+      </div>
+    </div>
+    <div class="hero-frame">
+      <div class="hero-img-box">
+        <img src="assets/images/IMG_0122.jpg" alt="Rustic Tiered Wedding Cake Masterpiece">
+      </div>
+      <div class="hero-badge-artisan">
+        <span>18+ Years Decorating Craft</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Dedicated About the Decorator Section -->
+  <section class="about-decorator-section" id="decorator">
+    <div class="about-decorator-card">
+      <div class="decorator-portrait-box">
+        <img src="assets/images/IMG_9819.PNG" alt="Kerri Lashua - Professional Pastry Chef &amp; Cake Decorator">
+      </div>
+      <div class="about-decorator-text">
+        <h2>About the Decorator</h2>
+        <span class="role-subtitle">Kerri Lashua • Head Confectioner &amp; Pastry Artist</span>
+        <p>With more than 18 years of specialized baking and decorating experience, I bring a passionate blend of culinary craftsmanship, artistic detail, and high-volume production discipline to every creation.</p>
+        <p>From fine-art hand-painted illustration cookies and intricate pastry tip lettering, to multi-tiered wedding showpieces and sculpted 3D illusion cakes, my focus is always on flawless presentation, structural integrity, and strict food safety standards.</p>
+        <p>Whether fulfilling large-scale corporate commissions for premier brands like Kate Spade and Marc Jacobs, or hand-crafting celebratory cakes for hundreds of guests, I pride myself on prompt, dependable execution and a warm commitment to service excellence.</p>
+        <div class="decorator-credentials-strip">
+          <div class="cred-item">
+            <span class="cred-number">18+</span>
+            <span class="cred-label">Years of Mastery</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-number">100+</span>
+            <span class="cred-label">Guest Event Scale</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-number">Food Safe</span>
+            <span class="cred-label">Sanitation &amp; Safety</span>
+          </div>
+          <div class="cred-item">
+            <span class="cred-number">100%</span>
+            <span class="cred-label">Artisan Dedication</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Commercial Commissions Showcase -->
+  <div class="brand-commissions-section" id="commissions">
+    <div class="commission-title">Featured High-Volume &amp; Commercial Commissions</div>
+    <div class="commission-grid">
+      <div class="commission-card">
+        <h4>Kate Spade New York</h4>
+        <p>Custom branded celebration cookies for retail promotional campaigns.</p>
+      </div>
+      <div class="commission-card">
+        <h4>Marc Jacobs International</h4>
+        <p>High-volume branded celebration cookie commissions.</p>
+      </div>
+      <div class="commission-card">
+        <h4>Jack Spade</h4>
+        <p>Specialty handcrafted cake pops for national online store launch.</p>
+      </div>
+      <div class="commission-card">
+        <h4>Lucky Brand Jeans</h4>
+        <p>Custom multi-tier centerpiece cake celebrating online store debut.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Technique Feature Spotlight -->
+  <div class="technique-spotlight-section" id="techniques">
+    <div class="section-header">
+      <h2>Technique &amp; Artistry Spotlight</h2>
+      <p>A closer look into hyper-realistic 3D sculpted illusion cakes and mixed-media gilded sugar craft.</p>
+    </div>
+
+    <div class="technique-spotlight-grid">
+      <!-- Feature 1: The Mango Illusion -->
+      <div class="technique-card">
+        <span class="tag-pill" style="align-self: flex-start;">3D Sculpted Illusion</span>
+        <h3>The Mango Illusion Showpiece</h3>
+        <p>A demonstration of extreme realism and texture modeling: two fresh organic mangoes paired alongside a hyper-realistic mango sculpted entirely from cake, vanilla buttercream, and hand-painted edible luster dust.</p>
+        <div class="technique-img-frame">
+          <img src="assets/images/IMG_3206.JPG" alt="The Mango Illusion Setup" loading="lazy">
+        </div>
+      </div>
+
+      <!-- Feature 2: Mixed-Media Gold Frames -->
+      <div class="technique-card">
+        <span class="tag-pill" style="align-self: flex-start;">Mixed-Media Craft</span>
+        <h3>Baroque Molded Gold Sugar Craft</h3>
+        <p>Advanced sugar craftsmanship combining precision edible color printing with custom silicone-molded fondant framing, burnished by hand with 24k food-grade gold luster dust.</p>
+        <div class="technique-img-frame">
+          <img src="assets/images/IMG_8390_2.jpg" alt="Baroque Gilded Edible Art Cookies" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Craftsmanship & Quality Showcase -->
+  <div class="packaging-spotlight" id="standards">
+    <div class="packaging-inner">
+      <div class="packaging-text">
+        <span class="tag-pill">Quality &amp; Standards</span>
+        <h3>High-Volume Consistency &amp; Care</h3>
+        <p>Every piece is executed with strict attention to food safety, recipe consistency, and clean presentation across high-volume production schedules.</p>
+        <ul class="packaging-perks">
+          <li><span>—</span> <strong>Piping &amp; Lettering Precision:</strong> Clean borders, consistent scrollwork, and legible message writing using standard pastry tips.</li>
+          <li><span>—</span> <strong>Structured Multi-Tier Engineering:</strong> Internal dowel and support systems for secure transport of multi-tier celebration cakes.</li>
+          <li><span>—</span> <strong>Sanitation &amp; SSOP Compliance:</strong> Rigorous compliance with food safety handling, allergen awareness, and clean workstation protocols.</li>
+          <li><span>—</span> <strong>High-Volume Speed:</strong> Proven ability to execute 100+ decorated units on tight operational timelines with uniform quality.</li>
+        </ul>
+      </div>
+      <div class="packaging-img-grid">
+        <img src="assets/images/IMG_8593.jpg" alt="Corona & Margarita Hand-Painted Summer Set" title="Hand-Painted Cookies">
+        <img src="assets/images/IMG_8503.jpg" alt="Under the Sea Molded Gold Mermaid & Seahorse Cookies" title="Molded Gold Cookies">
+        <img src="assets/images/IMG_8559.jpg" alt="Duck Duck Two Storybook Hand-Painted Set" title="Storybook Cookie Set">
+        <img src="assets/images/IMG_8573.jpg" alt="Lyle Lyle Crocodile Character Cookies" title="Character Art Cookies">
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio Gallery Section -->
+  <section id="gallery">
+    <div class="section-header">
+      <h2>Curated Work Gallery</h2>
+      <p>Browse signature cake decorating and confectionery work by technique and style.</p>
+    </div>
+
+    <div class="filter-tabs">
+      <button class="filter-btn active" onclick="filterGallery('all')">All Work</button>
+      <button class="filter-btn" onclick="filterGallery('cakes')">Artisan &amp; Illusion Cakes</button>
+      <button class="filter-btn" onclick="filterGallery('hand-painted')">Hand-Painted Art Cookies</button>
+      <button class="filter-btn" onclick="filterGallery('mixed-media')">Gilded &amp; Molded Sugar</button>
+      <button class="filter-btn" onclick="filterGallery('events')">Institutional &amp; Events</button>
+    </div>
+
+    <div class="gallery-grid">
+      <!-- Item 1: Real Photo (Pineapple Cove Academy School Order) -->
+      <div class="gallery-item" data-category="events">
+        <div class="item-media">
+          <div class="item-tag">Institutional &amp; Events</div>
+          <img src="assets/images/IMG_1829.jpg" alt="Pineapple Cove Classical Academy Custom Cookies" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>School &amp; Institutional Event Sets</h3>
+          <p>High-volume custom cookie production featuring precision logo reproduction, educator milestones, and theater/prom celebrations.</p>
+          <div class="item-meta-craft">Large-Quantity Production • Royal Icing &amp; Flooding</div>
+        </div>
+      </div>
+
+      <!-- Item 2: Real Photo (Stranger Things Illusion / Themed Cake) -->
+      <div class="gallery-item" data-category="cakes">
+        <div class="item-media">
+          <div class="item-tag">Artisan &amp; Themed Cakes</div>
+          <img src="assets/images/IMG_1701.jpg" alt="Stranger Things Themed Custom Cake" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>"Stranger Things" Showpiece Cake</h3>
+          <p>Multi-tier themed celebration cake featuring hand-painted forest silhouette illustration, holiday light alphabet wall, and a 3D hand-sculpted Demogorgon creature.</p>
+          <div class="item-meta-craft">Tiered Cake Assembly • Buttercream &amp; Fondant Sculpting</div>
+        </div>
+      </div>
+
+      <!-- Item 3: Real Photo (Paint-Your-Own Cookie Kits) -->
+      <div class="gallery-item" data-category="mixed-media">
+        <div class="item-media">
+          <div class="item-tag">Interactive Sugar Art</div>
+          <img src="assets/images/IMG_5041.jpg" alt="Paint-Your-Own Sugar Cookie Kits" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>Interactive Stenciled Cookie Sets</h3>
+          <p>Artisan sugar cookies topped with fondant and royal icing stenciled artwork with attached edible color palettes.</p>
+          <div class="item-meta-craft">Precision Stenciling • Royal Icing Piping</div>
+        </div>
+      </div>
+
+      <!-- Item 4: Real Photo (Disney Villains Gold-Framed Gilded Set) -->
+      <div class="gallery-item" data-category="hand-painted">
+        <div class="item-media">
+          <div class="item-tag">Fine Art &amp; Gilded</div>
+          <img src="assets/images/IMG_8389_2.jpg" alt="Disney Villains Hand-Painted Gold-Framed Cookies" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>"Disney Villains" Fine Art Portrait Set</h3>
+          <p>Fine-art hand-painted character portraits (Cruella, Evil Queen, Maleficent) combining freehand edible watercolor with molded baroque gold frames.</p>
+          <div class="item-meta-craft">Hand-Painted Edible Color • Molded Sugar Frames</div>
+        </div>
+      </div>
+
+      <!-- Item 5: Real Photo (Harry Potter / Gryffindor Sculpted Illusion Cake) -->
+      <div class="gallery-item" data-category="cakes">
+        <div class="item-media">
+          <div class="item-tag">3D Sculpted Illusion</div>
+          <img src="assets/images/7E450B4E-C62F-4BE1-AF1B-A59DFC3CCCF7.JPG" alt="Harry Potter Gryffindor Robe Sculpted Illusion Cake" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>Gryffindor Uniform Illusion Cake</h3>
+          <p>3D sculpted illusion cake featuring realistic textured knit sweater modeling, collared shirt, striped tie, draped Gryffindor scarf with fringe, crest, and parchment banner.</p>
+          <div class="item-meta-craft">Cake Sculpting • Fondant Texturing &amp; Layering</div>
+        </div>
+      </div>
+
+      <!-- Item 6: Real Photo (Luxury Dessert Box / Gilded Confections) -->
+      <div class="gallery-item" data-category="mixed-media">
+        <div class="item-media">
+          <div class="item-tag">Specialty Confections</div>
+          <img src="assets/images/IMG_7188.jpg" alt="Luxury Gilded Dessert Gift Box" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>Gilded Luxury Confectionery Set</h3>
+          <p>Assortment featuring chocolate-drizzled pretzel rods with gold pearls, marble fondant Oreos with molded gold frames, satin-bow cake pops, and hand-dipped berries.</p>
+          <div class="item-meta-craft">Confection Coating • Gold Luster Detailing</div>
+        </div>
+      </div>
+
+      <!-- Item 7: Real Photo (Sweet 16 Hand-Painted Fine Art Portrait & Butterfly Set) -->
+      <div class="gallery-item" data-category="hand-painted">
+        <div class="item-media">
+          <div class="item-tag">Hand-Painted Fine Art</div>
+          <img src="assets/images/IMG_5031.jpg" alt="Sweet 16 Hand-Painted Portrait Cookies" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>Fine Art Portrait &amp; Butterfly Collection</h3>
+          <p>Freehand edible art featuring delicate watercolor portraiture, hand-painted monarch butterflies, molded gold accents, and custom calligraphy.</p>
+          <div class="item-meta-craft">Brushwork Illustration • Calligraphy Lettering</div>
+        </div>
+      </div>
+
+      <!-- Item 8: Real Photo (Rustic Wedding Cake) -->
+      <div class="gallery-item" data-category="cakes">
+        <div class="item-media">
+          <div class="item-tag">Wedding &amp; Celebration Cakes</div>
+          <img src="assets/images/IMG_0122.jpg" alt="Rustic Multi-Tiered Wedding Cake" loading="lazy">
+        </div>
+        <div class="item-info">
+          <h3>Rustic Tiered Wedding Cake</h3>
+          <p>Multi-tier wedding cake featuring textured buttercream finish, natural florals, and internal dowel support engineered for large wedding receptions.</p>
+          <div class="item-meta-craft">Tier Stacking &amp; Leveling • Textured Buttercream</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Competencies Matrix -->
+  <div class="skills-section">
+    <div class="skills-container">
+      <div class="section-header" style="margin-bottom: 20px;">
+        <h2>Decorating &amp; Production Expertise</h2>
+        <p>Comprehensive technical competencies across bakery and pastry production.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-box">
+          <h4>Piping &amp; Message Lettering</h4>
+          <p>Mastery of round, star, leaf, and petal tips. Clean, legible handwriting and cursive messages in royal icing, buttercream, and chocolate fudge.</p>
+        </div>
+        <div class="skill-box">
+          <h4>Cake Assembly &amp; Filling</h4>
+          <p>Leveling, torting, filling, crumb coating, and smooth finishing on round, half-sheet, and full-sheet cakes following exact weight specifications.</p>
+        </div>
+        <div class="skill-box">
+          <h4>High-Volume Production</h4>
+          <p>Efficient production scheduling, inventory pulls from freezer/cooler, stock rotation, and packaging special orders for pickup and merchandising.</p>
+        </div>
+        <div class="skill-box">
+          <h4>Food Safety &amp; SSOP</h4>
+          <p>Strict compliance with sanitation operating procedures, temperature control logs, equipment maintenance, and quality assurance standards.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-col">
+        <h4>Kerri Lashua</h4>
+        <p>Professional Cake Decorator &amp; Confectionery Artisan | 18+ Years Craftsmanship</p>
+        <p>Melbourne / Palm Bay, Florida</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect &amp; Follow</h4>
+        <p>Instagram: <a href="https://instagram.com/confectionerriland" target="_blank">@confectionerriland</a></p>
+        <p>Email: <a href="mailto:kerri.lashua@gmail.com">kerri.lashua@gmail.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Kerri Lashua. All rights reserved. Professional Confectionery Portfolio.
+    </div>
+  </footer>
+
+  <script>
+    function playMangoVideo() {
+      const poster = document.getElementById('mangoPosterImg');
+      const overlay = document.getElementById('mangoPlayOverlay');
+      const video = document.getElementById('mangoRealVideo');
+      if (poster && overlay && video) {
+        poster.style.display = 'none';
+        overlay.style.display = 'none';
+        video.style.display = 'block';
+        video.play();
+      }
+    }
+
+    function filterGallery(category) {
+      const items = document.querySelectorAll('.gallery-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      items.forEach(item => {
+        if (category === 'all' || item.getAttribute('data-category') === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+  </script>
+</body>
+</html>
